@@ -68,9 +68,9 @@ dotnet run
 
 ## Tasks
 
-1. add Console.WriteLine statements to prompt the user to enter any character other than a number to generate a FormatException
-2. add a ReadLine statement inside a try block to Parse the input provided above
-3. add a Console.WriteLine statement in the catch block that outputs as much information about the Exception that is useful. Use `$@"{e.Message}"` and other properties to display the info
+1. Add Console.WriteLine statements to prompt the user to enter any character other than a number to generate a FormatException
+2. Add a ReadLine statement inside a try block to Parse the input provided above
+3. Add a Console.WriteLine statement in the catch block that outputs as much information about the Exception that is useful. Use `$@"{e.Message}"` and other properties to display the info
 4. Copy that format for other type of exceptions, maybe with prompts on which type of Exception the user wants to display
 
 ```
@@ -86,6 +86,9 @@ Message [string] = "Attempted to divide by zero."
 Source [string] = "Exceptions101"
 
 StackTrace [string] = at Program.<Main>$(String[] args) in c:\Users\path_to_project\Exceptions101\Program.cs:line 42
+
+ex.TargetSite: Void <<Main>$>g__ShowDivideByZeroException|0_1(<>c__DisplayClass0_0 ByRef)
+ex.TargetSite.GetTYpe(): System.Reflection.RuntimeMethodInfo
 ```
 
 Common exceptions to include
@@ -115,3 +118,5 @@ C:\Users\pc\Documents\WebDev\CSharp\csharp-exception-object-demo\Program.cs(60,3
 
 C:\Users\pc\Documents\WebDev\CSharp\csharp-exception-object-demo\Program.cs(43,22): warning CS8602: Dereference of a possibly null reference.
 ```
+
+A lot of warnings I have been seeing involve use `!` at the end of the expression (WTF?) The _null-conditional operator_?
