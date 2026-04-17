@@ -7,7 +7,7 @@ A C# console application demonstrating exception handling, try/catch, user input
 This is a deliverable for module 2, week 2 for Code:You's Software Development pathway. The requirements are:
 
 - Accept user input and store it in a string variable
-- Use the `Parse()` method to parse the user input in to a specific data type and catch the exceptions thrown when that value cannot be parsed in to that data type
+- Use the `Parse()` method to parse the user input in to a specific data type and catch the exceptions thrown when that value cannot be parsed into that data type
 - Implement try/catch to perform error handling using the Parse method in the try block and use the catch block for handling exceptions.
 
 This console app delves into the properties in the Exception object and writes all relevant information to the console for the common exception types.
@@ -26,8 +26,8 @@ This console app delves into the properties in the Exception object and writes a
 1. Clone this repository and switch into project folder
 
    ```sh
-   git clone https://github.com/Kernix13/REPO_NAME
-   cd REPO_NAME
+   git clone https://github.com/Kernix13/csharp-exception-object-demo
+   cd csharp-exception-object-demo
    ```
 
 2. Create a solution file
@@ -39,7 +39,7 @@ This console app delves into the properties in the Exception object and writes a
 3. Link the project to the solution
 
    ```sh
-   dotnet sln add REPO_NAME.csproj
+   dotnet sln add csharp-exception-object-demo.csproj
    ```
 
 4. Run the application
@@ -57,10 +57,10 @@ This console app delves into the properties in the Exception object and writes a
 ### Quick Start
 
 ```sh
-git clone https://github.com/Kernix13/REPO_NAME
-cd REPO_NAME
+git clone https://github.com/Kernix13/csharp-exception-object-demo
+cd csharp-exception-object-demo
 dotnet new sln
-dotnet sln add REPO_NAME.csproj
+dotnet sln add csharp-exception-object-demo.csproj
 dotnet run
 ```
 
@@ -77,9 +77,8 @@ dotnet run
 ex.Message        // Human-readable message
 ex.Source         // Assembly/app name
 ex.StackTrace     // Full stack trace string
-ex.InnerException // Nested exception (very important)
-ex.HResult        // Numeric error code
-ex.TargetSite     // Method where error occurred
+ex.InnerException // Nested exception (nothing there?)
+ex.TargetSite     // Method where error occurred (not sure how to split that string)
 
 EXAMPLE:
 

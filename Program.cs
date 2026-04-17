@@ -46,6 +46,7 @@ void ShowExceptionInfo(Exception ex, string[] urls, int index)
     Console.WriteLine($"\nError Type: {ex.GetType().Name}");
     Console.WriteLine($"Type Description: {ex.Message}");
     Console.WriteLine($"Source Directory: {ex.Source}");
+    // Console.WriteLine($"Method where error occurred: {ex.TargetSite}");
     Console.WriteLine($"Location of Exception: {fileAndLine}");
     // Console.WriteLine($"Stack Trace: {ex.StackTrace}");
     Console.WriteLine($"{ex.GetType().Name} Docs Link: {urls[index]}");
