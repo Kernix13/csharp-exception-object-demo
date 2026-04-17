@@ -66,6 +66,32 @@ dotnet run
 
 <br>
 
+## Example output
+
+I write to the console on what to enter so that an error will be throw. Here is example output for `DivideByZeroException`:
+
+```sh
+Learn exception handling and the Exception object.
+
+Enter the type of exception you want to see:
+
+1. DivideByZeroException (Enter 1)
+2. FormatException (Enter 2)
+3. IndexOutOfRangeException (Enter 3)
+4. NullReferenceException (Enter 4)
+1
+Enter the number 0 to see a Divide By Zero Exception: 0
+
+Error Type: DivideByZeroException
+Type Description: Attempted to divide by zero.
+Source Directory: csharp-exception-object-demo
+Location of Exception: Program.cs:line 65
+DivideByZeroException Docs Link: https://learn.microsoft.com/en-us/dotnet/api/system.dividebyzeroexception
+
+```
+
+<br>
+
 ## Tasks
 
 1. Add Console.WriteLine statements to prompt the user to enter any character other than a number to generate a FormatException
