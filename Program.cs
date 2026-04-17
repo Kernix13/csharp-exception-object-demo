@@ -26,12 +26,10 @@ switch (type)
         ShowFormatException();
         break;
     case "3":
-        // Create function to demonstrate IndexOutOfRangeException
-        // ShowIndexOutOfRangeException();
+        ShowIndexOutOfRangeException();
         break;
     case "4":
-        // Create function to demonstrate NullReferenceException
-        // ShowNullReferenceException();
+        ShowNullReferenceException();
         break;
     default:
         Console.WriteLine("\nInvalid choice. Please enter a number between 1 and 4.");
@@ -62,8 +60,8 @@ void ShowDivideByZeroException()
     try
     {
         Console.Write("Enter the number 0 to see a Divide By Zero Exception: ");
-        int divisor = int.Parse(Console.ReadLine()!);
 
+        int divisor = int.Parse(Console.ReadLine()!);
         int result = 10 / divisor;
     }
     catch (DivideByZeroException ex)
@@ -71,7 +69,6 @@ void ShowDivideByZeroException()
         ShowExceptionInfo(ex, urls, 0);
     }
 }
-
 
 // Option 2: Format Exception ✅
 void ShowFormatException()
@@ -84,13 +81,38 @@ void ShowFormatException()
     }
     catch (FormatException ex)
     {
+        // Why is ex.Source = System.Private.CoreLib?
         ShowExceptionInfo(ex, urls, 1);
     }
 }
 
-
-// Option 3: Index Out Of Range Exception 📌
-
+// Option 3: Index Out Of Range Exception ✅
+void ShowIndexOutOfRangeException()
+{
+    try
+    {
+        int[] numbers = { 1, 2, 3 };
+        Console.Write("Enter a number greater than 2 to see a Index Out Of Range Exception: ");
+        int index = int.Parse(Console.ReadLine()!);
+        Console.WriteLine($"Value at index {index}: {numbers[index]}");
+    }
+    catch (IndexOutOfRangeException ex)
+    {
+        // Why is ex.Source = System.Private.CoreLib?
+        ShowExceptionInfo(ex, urls, 2);
+    }
+}
 
 // Option 4: Null Reference Exception 📌
-
+void ShowNullReferenceException()
+{
+    try
+    {
+        string? text = null;
+        Console.WriteLine(text!.Length);
+    }
+    catch (NullReferenceException ex)
+    {
+        ShowExceptionInfo(ex, urls, 3);
+    }
+}

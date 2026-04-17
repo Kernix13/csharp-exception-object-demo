@@ -111,6 +111,10 @@ string[] urls =
 };
 ```
 
+## Errors and warnings
+
+<!-- Rewrite this section and possible the Tasks section as well or remove it all -->
+
 Warnings I am getting in the console:
 
 ```
@@ -120,3 +124,13 @@ C:\Users\pc\Documents\WebDev\CSharp\csharp-exception-object-demo\Program.cs(43,2
 ```
 
 A lot of warnings I have been seeing involve use `!` at the end of the expression (WTF?) The _null-conditional operator_?
+
+### `ex.Source = System.Private.CoreLib`
+
+- `DivideByZeroException` happens inside your code, so Source = your project
+- Same for `NullReferenceException`
+- `IndexOutOfRangeException` & `FormatException` -> Exception is thrown inside .NET's parsing code which is in `System.Private.CoreLib`
+
+Your code throwing the exception vs .NET throwing it!
+
+> `Source` = where the exception is thrown, not where it’s caught
