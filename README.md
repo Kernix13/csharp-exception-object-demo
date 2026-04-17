@@ -8,7 +8,7 @@ This is a deliverable for module 2, week 2 for Code:You's Software Development p
 
 - Accept user input and store it in a string variable
 - Use the `Parse()` method to parse the user input in to a specific data type and catch the exceptions thrown when that value cannot be parsed into that data type
-- Implement try/catch to perform error handling using the Parse method in the try block and use the catch block for handling exceptions.
+- Implement try/catch to perform error handling using the Parse method in the `try` block and use the `catch` block for handling exceptions.
 
 This console app delves into the properties in the Exception object and writes all relevant information to the console for the common exception types.
 
@@ -68,7 +68,7 @@ dotnet run
 
 ## Example output
 
-I write to the console on what to enter so that an error will be throw. Here is example output for `DivideByZeroException`:
+Console messages tell the user on what to enter so that an error will be thrown. Here is example output for `DivideByZeroException`:
 
 ```sh
 Learn exception handling and the Exception object.
@@ -90,13 +90,15 @@ DivideByZeroException Docs Link: https://learn.microsoft.com/en-us/dotnet/api/sy
 
 ```
 
+I could maybe output some aspect of the code like `int result = 10 / divisor;` so the user knows what is going on.
+
 <br>
 
 ## Tasks
 
-1. Add Console.WriteLine statements to prompt the user to enter any character other than a number to generate a FormatException
-2. Add a ReadLine statement inside a try block to Parse the input provided above
-3. Add a Console.WriteLine statement in the catch block that outputs as much information about the Exception that is useful. Use `$@"{e.Message}"` and other properties to display the info
+1. Add `Console.WriteLine` statements to prompt the user to enter any character other than a number to generate a `FormatException`
+2. Add a `ReadLine` statement inside a try block to Parse the input provided above
+3. Add a `Console.WriteLine` statement in the `catch` block that outputs as much information about the Exception that is useful. Use `$@"{e.Message}"` and other properties to display the info
 4. Copy that format for other type of exceptions, maybe with prompts on which type of Exception the user wants to display
 
 ```
@@ -119,13 +121,19 @@ ex.TargetSite.GetTYpe(): System.Reflection.RuntimeMethodInfo
 
 Common exceptions to include
 
-- IndexOutOfRangeException
-- NullReferenceException
-- DivideByZeroException
-- FormatException (bad parsing input)
-- Maybe: ArgumentNullException, ArgumentOutOfRangeException
+- `IndexOutOfRangeException`
+- `NullReferenceException`
+- `DivideByZeroException`
+- `FormatException`
+- Others to consider:
+  - `OverflowException`
+  - `ArgumentNullException`
+  - `ArgumentOutOfRangeException`
+  - `IOException`
 
-Until we cover dictionaries or Classes/objects, just reference links in an array
+> _How many exceptions are common enough to include?_
+
+Until dictionaries or Classes/objects are added to the project, just reference doc links in an array:
 
 ```cs
 string[] urls =
@@ -141,7 +149,7 @@ string[] urls =
 
 <!-- Rewrite this section and possible the Tasks section as well or remove it all -->
 
-Warnings I am getting in the console:
+Examples of some warnings I am getting in the console:
 
 ```
 C:\Users\pc\Documents\WebDev\CSharp\csharp-exception-object-demo\Program.cs(60,33): warning CS8604: Possible null reference argument for parameter 's' in 'int int.Parse(string s)'.
@@ -149,13 +157,15 @@ C:\Users\pc\Documents\WebDev\CSharp\csharp-exception-object-demo\Program.cs(60,3
 C:\Users\pc\Documents\WebDev\CSharp\csharp-exception-object-demo\Program.cs(43,22): warning CS8602: Dereference of a possibly null reference.
 ```
 
-A lot of warnings I have been seeing involve use `!` at the end of the expression (WTF?) The _null-conditional operator_?
+A lot of warnings I have been seeing involve use `!` at the end of the expression: the _null-conditional operator_?
 
-### `ex.Source = System.Private.CoreLib`
+### `ex.Source` = `System.Private.CoreLib`
+
+`ex.Source` -> The assembly (compiled code) where the exception was thrown
 
 - `DivideByZeroException` happens inside your code, so Source = your project
-- Same for `NullReferenceException`
-- `IndexOutOfRangeException` & `FormatException` -> Exception is thrown inside .NET's parsing code which is in `System.Private.CoreLib`
+- Same for `NullReferenceException` - exception is thrown in your code
+- `IndexOutOfRangeException` & `FormatException` -> Exception is thrown inside .NET's parsing code which is in `System.Private.CoreLib` (actually thrown by the runtime).
 
 Your code throwing the exception vs .NET throwing it!
 

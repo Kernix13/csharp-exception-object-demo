@@ -54,7 +54,7 @@ void ShowExceptionInfo(Exception ex, string[] urls, int index)
     Console.WriteLine($"{ex.GetType().Name} Docs Link: {urls[index]}");
 }
 
-// Option 1: Divide By Zero Exception ✅
+// Option 1: Divide By Zero Exception 
 void ShowDivideByZeroException()
 {
     try
@@ -70,7 +70,7 @@ void ShowDivideByZeroException()
     }
 }
 
-// Option 2: Format Exception ✅
+// Option 2: Format Exception 
 void ShowFormatException()
 {
     try
@@ -81,29 +81,32 @@ void ShowFormatException()
     }
     catch (FormatException ex)
     {
-        // Why is ex.Source = System.Private.CoreLib?
+        // ex.Source = System.Private.CoreLib
         ShowExceptionInfo(ex, urls, 1);
     }
 }
 
-// Option 3: Index Out Of Range Exception ✅
+// Option 3: Index Out Of Range Exception 
 void ShowIndexOutOfRangeException()
 {
     try
     {
         int[] numbers = { 1, 2, 3 };
+
         Console.Write("Enter a number greater than 2 to see a Index Out Of Range Exception: ");
+
         int index = int.Parse(Console.ReadLine()!);
+
         Console.WriteLine($"Value at index {index}: {numbers[index]}");
     }
     catch (IndexOutOfRangeException ex)
     {
-        // Why is ex.Source = System.Private.CoreLib?
+        // ex.Source = System.Private.CoreLib
         ShowExceptionInfo(ex, urls, 2);
     }
 }
 
-// Option 4: Null Reference Exception 📌
+// Option 4: Null Reference Exception 
 void ShowNullReferenceException()
 {
     try
