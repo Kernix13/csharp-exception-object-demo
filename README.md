@@ -6,8 +6,8 @@ A C# console application demonstrating exception handling, try/catch, user input
 
 This is a deliverable for module 2, week 2 for Code:You's Software Development pathway. The requirements are:
 
-- Accept user input and store it in a string variable
-- Use the `Parse()` method to parse the user input in to a specific data type and catch the exceptions thrown when that value cannot be parsed into that data type
+- Accept user input and store it in a string variable.
+- Use the `Parse()` method to parse the user input in to a specific data type and catch the exceptions thrown when that value cannot be parsed into that data type.
 - Implement try/catch to perform error handling using the Parse method in the `try` block and use the `catch` block for handling exceptions.
 
 This console app delves into the properties in the Exception object and writes all relevant information to the console for the common exception types.
@@ -96,10 +96,10 @@ I could maybe output some aspect of the code like `int result = 10 / divisor;` s
 
 ## Tasks
 
-1. Add `Console.WriteLine` statements to prompt the user to enter any character other than a number to generate a `FormatException`
-2. Add a `ReadLine` statement inside a try block to Parse the input provided above
-3. Add a `Console.WriteLine` statement in the `catch` block that outputs as much information about the Exception that is useful. Use `$@"{e.Message}"` and other properties to display the info
-4. Copy that format for other type of exceptions, maybe with prompts on which type of Exception the user wants to display
+1. Add `Console.WriteLine` statements to prompt the user to enter any character other than a number to generate a `FormatException`.
+2. Add a `ReadLine` statement inside a try block to Parse the input provided above.
+3. Add a `Console.WriteLine` statement in the `catch` block that outputs as much information about the Exception that is useful. Use `$@"{e.Message}"` and other properties to display the info.
+4. Copy that format for other type of exceptions, maybe with prompts on which type of Exception the user wants to display.
 
 ```
 ex.Message        // Human-readable message
@@ -145,6 +145,8 @@ string[] urls =
 };
 ```
 
+<br>
+
 ## Errors and warnings
 
 <!-- Rewrite this section and possible the Tasks section as well or remove it all -->
@@ -161,7 +163,7 @@ A lot of warnings I have been seeing involve use `!` at the end of the expressio
 
 ### `ex.Source` = `System.Private.CoreLib`
 
-`ex.Source` -> The assembly (compiled code) where the exception was thrown
+`ex.Source` -> The assembly (compiled code) where the exception was thrown.
 
 - `DivideByZeroException` happens inside your code, so Source = your project
 - Same for `NullReferenceException` - exception is thrown in your code
@@ -169,4 +171,4 @@ A lot of warnings I have been seeing involve use `!` at the end of the expressio
 
 Your code throwing the exception vs .NET throwing it!
 
-> `Source` = where the exception is thrown, not where it’s caught
+`Source` = where the exception is thrown, not where it's caught.
