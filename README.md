@@ -60,7 +60,9 @@ This console app delves into the properties in the Exception object and writes a
    dotnet build
    ```
 
-### Quick Start
+### ⚡ Quick Start
+
+<!-- I t hink h3 elements should have an emoji/icon at the beginning -->
 
 ```sh
 git clone https://github.com/Kernix13/csharp-exception-object-demo
@@ -98,7 +100,7 @@ DivideByZeroException Docs Link: https://learn.microsoft.com/en-us/dotnet/api/sy
 
 I could maybe output some aspect of the code like `int result = 10 / divisor;` so the user knows what is going on.
 
-### Exception object fields
+### 📌 Exception object fields
 
 ```
 ex.Message        // Human-readable message
@@ -118,7 +120,7 @@ ex.TargetSite: Void <<Main>$>g__ShowDivideByZeroException|0_1(<>c__DisplayClass0
 ex.TargetSite.GetTYpe(): System.Reflection.RuntimeMethodInfo
 ```
 
-### Common exceptions to include
+### 🔷 Common exceptions to include
 
 - `IndexOutOfRangeException`
 - `NullReferenceException`
@@ -132,7 +134,7 @@ ex.TargetSite.GetTYpe(): System.Reflection.RuntimeMethodInfo
 
 > _How many exceptions are common enough to include?_
 
-### Exception.Source values
+### 🔹 Exception.Source values
 
 > _See the comments in `Program.cs` involving `System.Private.CoreLib`._
 
@@ -166,3 +168,22 @@ string[] urls =
     "https://learn.microsoft.com/en-us/dotnet/api/system.nullreferenceexception"
 };
 ```
+
+<!--
+
+⚠️ Warning (most universally appropriate)
+❗ Exclamation (lighter than warning)
+🚫 “Something went wrong”
+🛑 Stop (stronger emphasis)
+🔹 Small blue diamond → clean, minimal section marker
+🔷 Large Blue Diamond
+🔸 Small Orange Diamond
+🔶 Large Orange Diamond
+🔸 Orange diamond → slight variation if needed
+▪️ Small square → even more subtle
+🧩 Component / piece of logic
+🛠️ Tooling / debugging
+📌 “Point of focus” (very clean and underrated)
+📎 Attached detail / example
+
+ -->
