@@ -18,6 +18,8 @@ This console app delves into the properties in the Exception object and writes a
 
 <!-- Are those last 2 sentences repetitive? Should they be combined? -->
 
+<br>
+
 ## Prerequisites
 
 - [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download)
