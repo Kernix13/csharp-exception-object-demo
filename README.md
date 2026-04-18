@@ -36,39 +36,29 @@ This console app delves into the properties in the Exception object and writes a
    cd csharp-exception-object-demo
    ```
 
-2. Create a solution file
-
-   ```sh
-   dotnet new sln
-   ```
-
-3. Link the project to the solution
-
-   ```sh
-   dotnet sln add csharp-exception-object-demo.csproj
-   ```
-
-4. Run the application
+2. Run the application
 
    ```bash
    dotnet run
    ```
 
-5. Build the application
+3. Build the application
 
    ```bash
    dotnet build
    ```
 
-### ⚡ Quick Start
+4. Follow the propts in the console to see the specific exceptions details.
+
+<br>
+
+## ⚡ Quick Start
 
 <!-- I t hink h3 elements should have an emoji/icon at the beginning -->
 
 ```sh
 git clone https://github.com/Kernix13/csharp-exception-object-demo
 cd csharp-exception-object-demo
-dotnet new sln
-dotnet sln add csharp-exception-object-demo.csproj
 dotnet run
 ```
 
