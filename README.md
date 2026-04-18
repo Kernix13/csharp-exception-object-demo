@@ -132,7 +132,7 @@ ex.TargetSite.GetTYpe(): System.Reflection.RuntimeMethodInfo
   - `ArgumentOutOfRangeException`
   - `IOException`
 
-> _How many exceptions are common enough to include?_
+\_How many exceptions are common enough to include?
 
 ### 🔷 Exception.Source values
 
