@@ -100,7 +100,7 @@ DivideByZeroException Docs Link: https://learn.microsoft.com/en-us/dotnet/api/sy
 
 I could maybe output some aspect of the code like `int result = 10 / divisor;` so the user knows what is going on.
 
-### 📌 Exception object fields
+### 🔷 Exception object fields
 
 ```
 ex.Message        // Human-readable message
@@ -134,7 +134,7 @@ ex.TargetSite.GetTYpe(): System.Reflection.RuntimeMethodInfo
 
 > _How many exceptions are common enough to include?_
 
-### 🔹 Exception.Source values
+### 🔷 Exception.Source values
 
 > _See the comments in `Program.cs` involving `System.Private.CoreLib`._
 
@@ -182,8 +182,8 @@ string[] urls =
 🔸 Orange diamond → slight variation if needed
 ▪️ Small square → even more subtle
 🧩 Component / piece of logic
-🛠️ Tooling / debugging
+🛠️ Tooling / debugging / Troubleshooting
 📌 “Point of focus” (very clean and underrated)
-📎 Attached detail / example
+📎 Attached detail / example ℹ️
 
  -->
