@@ -52,7 +52,7 @@ This console app delves into the properties in the Exception object and writes a
 
 <br>
 
-## ⚡ Quick Start
+### ⚡ Quick Start
 
 <!-- I t hink h3 elements should have an emoji/icon at the beginning -->
 
