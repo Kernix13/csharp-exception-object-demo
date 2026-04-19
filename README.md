@@ -50,7 +50,7 @@ This console app delves into the properties in the Exception object and writes a
 
 4. Follow the propts in the console to see the specific exceptions details.
 
-### ⚡ Quick Start
+### <span aria-hidden="true">⚡</span> Quick Start
 
 <!-- I t hink h3 elements should have an emoji/icon at the beginning -->
 
@@ -88,7 +88,7 @@ DivideByZeroException Docs Link: https://learn.microsoft.com/en-us/dotnet/api/sy
 
 I could maybe output some aspect of the code like `int result = 10 / divisor;` so the user knows what is going on.
 
-### 📚 Exception object fields
+### <span aria-hidden="true">📚</span> Exception object fields
 
 There are not as many fields as I hoped to drill down into to get information, but here are the most useful IMO:
 
@@ -110,7 +110,7 @@ ex.TargetSite: Void <<Main>$>g__ShowDivideByZeroException|0_1(<>c__DisplayClass0
 ex.TargetSite.GetTYpe(): System.Reflection.RuntimeMethodInfo
 ```
 
-### 📌 Common exceptions to include
+### <span aria-hidden="true">📌</span> Common exceptions to include
 
 I am using 4 exceptions in `Program.cs`:
 
@@ -128,7 +128,7 @@ Others to consider:
 
 How many exceptions are common enough to include?
 
-### 🎯 Exception.Source values
+### <span aria-hidden="true">🎯</span> Exception.Source values
 
 > _See the comments in `Program.cs` involving `System.Private.CoreLib`._
 
@@ -151,7 +151,7 @@ Your code throwing the exception vs .NET throwing it! `Source` = where the excep
 3. Add a `Console.WriteLine` statement in the `catch` block that outputs as much information about the Exception that is useful. Use `$@"{e.Message}"` and other properties to display the info.
 4. Copy that format for other type of exceptions, maybe with prompts on which type of Exception the user wants to display.
 
-### 🔗 Link to docs
+### <span aria-hidden="true">🔗</span> Link to docs
 
 Until dictionaries or Classes/objects are added to the project, just reference doc links in an array:
 
