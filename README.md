@@ -125,6 +125,7 @@ Others to consider:
 - `ArgumentNullException`
 - `ArgumentOutOfRangeException`
 - `IOException`
+- `TypeInitializationException`
 
 How many exceptions are common enough to include?
 
@@ -140,18 +141,7 @@ How many exceptions are common enough to include?
 
 Your code throwing the exception vs .NET throwing it! `Source` = where the exception is thrown, not where it's caught.
 
-<br>
-
-## Tasks
-
-<!-- Rewrite this section or remove it - does the user need to know/see this? -->
-
-1. Add `Console.WriteLine` statements to prompt the user to enter any character other than a number to generate a `FormatException`.
-2. Add a `ReadLine` statement inside a try block to Parse the input provided above.
-3. Add a `Console.WriteLine` statement in the `catch` block that outputs as much information about the Exception that is useful. Use `$@"{e.Message}"` and other properties to display the info.
-4. Copy that format for other type of exceptions, maybe with prompts on which type of Exception the user wants to display.
-
-### <span aria-hidden="true">🔗</span> Link to docs
+### <span aria-hidden="true">🔗</span> Link to docs array
 
 Until dictionaries or Classes/objects are added to the project, just reference doc links in an array:
 
