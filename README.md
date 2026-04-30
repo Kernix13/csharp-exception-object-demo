@@ -32,7 +32,7 @@ This console app delves into the properties in the Exception object and writes a
 1. Clone this repository and switch into project folder
 
    ```sh
-   git clone https://github.com/Kernix13/csharp-exception-object-demo
+   git clone https://github.com/Kernix13/csharp-exception-object-demo.git
    cd csharp-exception-object-demo
    ```
 
@@ -55,7 +55,7 @@ This console app delves into the properties in the Exception object and writes a
 <!-- I t hink h3 elements should have an emoji/icon at the beginning -->
 
 ```sh
-git clone https://github.com/Kernix13/csharp-exception-object-demo
+git clone https://github.com/Kernix13/csharp-exception-object-demo.git
 cd csharp-exception-object-demo
 dotnet run
 ```
